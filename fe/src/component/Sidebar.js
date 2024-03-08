@@ -18,6 +18,7 @@ const Sidebar = () => {
           <ul className='category'>
             <li><h3><Link to='/post/all'>전체글</Link></h3></li>
             <li><Link to='/post/htmlcss'>HTML / CSS</Link></li>
+            <li><Link to='/post/tailwindcss'>TaliwindCSS</Link></li>
             <li><Link to='/post/algorithm'>Algorithm</Link></li>
             <li><Link to='/post/structure'>자료구조</Link></li>
             <li><Link to='/post/javascript'>JavaScript</Link></li>
@@ -25,8 +26,6 @@ const Sidebar = () => {
             <li><Link to='/post/nodejs'>NodeJS</Link></li>
             <li><Link to='/post/mongodb'>MongoDB</Link></li>
             <li><Link to='/post/express'>Express</Link></li>
-            <li><Link to='/post/engineer'>정보처리기사</Link></li>
-            <li><Link to='/post/engineer'>정보처리기사</Link></li>
             <li><Link to='/post/engineer'>정보처리기사</Link></li>
           </ul>
         </div>

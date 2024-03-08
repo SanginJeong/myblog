@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-const Navbar = ( { isLogin, setIsLogin } ) => {
-
+import { Link, useNavigate } from 'react-router-dom'
+const Navbar = ( { setIsLogin } ) => {
+  const navigate = useNavigate();
   return (
     <>
       <nav>
@@ -11,8 +11,8 @@ const Navbar = ( { isLogin, setIsLogin } ) => {
           <input type="text" />
         </form>
         <div>
-          <button onClick={()=>{setIsLogin(!isLogin)}} className='login'>로그인</button>
-          <button className='signup'>회원가입</button>
+          <button onClick={()=>{setIsLogin(true)}} className='login'>로그인</button>
+          <button onClick={()=>{navigate('/signin')}}className='signup'>회원가입</button>
         </div>
       </nav>
     </>

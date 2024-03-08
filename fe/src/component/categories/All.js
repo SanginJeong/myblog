@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Board from '../board/Board'
 const All = () => {
   return (
     <>
       <main>
-        all
+        <Board />
       </main>
     </>
   )

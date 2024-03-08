@@ -9,7 +9,7 @@ const Profile = () => {
           <h2>계획적으로, 논리적으로 프로그래밍을 하자.</h2>
           <div className='my_profile'>
             <div className='my_profile_image'>
-              <img src="./KakaoTalk_20240308_172607051.jpg" alt=""/>
+              <img src="https://github.com/SanginJeong/myblog/blob/master/fe/src/image/KakaoTalk_20240308_172607051.jpg?raw=true" alt=""/>
               <h3>정상인</h3>
             </div>
             
