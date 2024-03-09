@@ -21,7 +21,7 @@ import Login from './component/Login';
 import Overlay from './component/Overlay';
 import Signin from './component/Signin';
 import Tailwind from './component/categories/Tailwind';
-import Board from './component/board/Board';
+
 
 function App() {
   const [isLogin, setIsLogin] = useState(false);
