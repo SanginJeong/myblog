@@ -43,7 +43,7 @@ const Signin = () => {
         <div className='signinpage'>
           <h1>회원가입</h1>
           <h3>비밀번호는 암호화해서 저장되기 때문에 걱정 안해도 됨 아무도 모름</h3>
-          <h3 style={ {color: 'red'} }> {error ? `${error}`: null} </h3>
+          <h3 style={ {color: 'red'} }> {error ? error: null} </h3>
           <form className='signin_area' onSubmit={onClickCompleteSignin}>
             <input type="text" placeholder='이메일' value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
             <input type="text" placeholder='비밀번호' value={password} onChange={(e)=>{setPassword(e.target.value)}}/>

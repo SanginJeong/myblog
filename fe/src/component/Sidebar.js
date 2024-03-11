@@ -33,13 +33,13 @@ const Sidebar = () => {
           <div className='links'>
             <div>
               <a target='_blank' href="https://github.com/SanginJeong">
-                <i class="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github"></i>
                 <h3>Github</h3>
               </a>
             </div>
             <div>
               <a target='_blank' href="https://blog.naver.com/enfp_isfj">
-                <i class="fa-solid fa-blog"></i>
+                <i className="fa-solid fa-blog"></i>
                 <h3>BLOG</h3>
               </a>
             </div>

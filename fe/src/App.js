@@ -22,14 +22,15 @@ import Overlay from './component/Overlay';
 import Signin from './component/Signin';
 import Tailwind from './component/categories/Tailwind';
 
-function App() {
-  const [isLogin, setIsLogin] = useState(false);
 
+function App() {
+  const [isModal, setIsModal] = useState(false);
+  const [isUserLogin, setIsUserLogin] = useState(false);
   return (
     <>
-      <Navbar setIsLogin = {setIsLogin}/>
-      {isLogin ? <Login setIsLogin = {setIsLogin}/> : null}
-      {isLogin ? <Overlay/> : null}
+      <Navbar setIsModal = {setIsModal} isUserLogin = {isUserLogin} setIsUserLogin = {setIsUserLogin}/>
+      {isModal ? <Login setIsModal = {setIsModal} setIsUserLogin = {setIsUserLogin}/> : null}
+      {isModal ? <Overlay/> : null}
       <Routes>
         <Route path='/' element= {<Main />}/>
         <Route path='/profile' element= {<Profile />}/>

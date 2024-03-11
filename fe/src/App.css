@@ -2,6 +2,10 @@ html, body{
   margin: 0;
   padding: 0;
 }
+
+
+/* 사이드바 컴포넌트 */
+
 .sidebar ul{
   list-style: none;
   padding: 0;
@@ -18,11 +22,10 @@ a{
   color: white;
 }
 
-/* 사이드바 컴포넌트 */
 .sidebar{
   width: 400px;
-  height: auto;
   border: 1px solid;
+  min-height: 100%;
   padding-right: 3px;
   position: absolute;
   top: 4.5rem;
@@ -81,14 +84,14 @@ nav input{
   color: rgb(65, 152, 222);
 }
 
-.login, .signup{
+.login, .logout, .mypage, .signup{
   background: none;
   color: white;
   border: none;
   cursor: pointer;
   padding: 8px 12px;
 }
-.login:hover, .signup:hover{
+.login:hover, .logout:hover, .mypage:hover , .signup:hover{
   background-color: rgb(65, 152, 222);
 }
 /* mainboard 컴포넌트 */
@@ -153,9 +156,10 @@ main{
 .modal_login{
   position: absolute;
   top: 30%;
-  left: 50%;
+  left: 45%;
   background-color: rgb(47, 52, 57);
   color: white;
+  position: fixed;
   width: 17rem;
   height: 20rem;
   border-radius: 12px;
@@ -179,14 +183,14 @@ main{
   text-align: center;
 }
 
-.modal_login > input {
+.modal_login > form > input {
   width: 100%;
   padding: 0.5rem 0.5rem;
   margin-top: 1rem;
   box-sizing: border-box;
 }
 
-.modal_login > button {
+.modal_login > form > button, .modal_login > button {
   width: 100%;
   margin-top: 1rem;
   background-color: rgb(47, 52, 57);
@@ -195,7 +199,7 @@ main{
   cursor: pointer;
 }
 
-.modal_login > button:hover {
+.modal_login > button:hover, .modal_login > form > button:hover {
   background-color: rgb(65, 152, 222);
 }
 
